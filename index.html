@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="aprendeIT: aprendé tecnología, programación, inteligencia artificial y automatizaciones con clases en vivo dictadas por Jeremias Toledo." />
+  <title>aprendeIT — Tecnología que se aprende haciendo</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement">
+    <div class="container announcement__inner">
+      <span class="announcement__dot" aria-hidden="true"></span>
+      <span>Nuevas cohortes en Septiembre 2026</span>
+      <span class="announcement__separator">·</span>
+      <span>Cupos reducidos por grupo</span>
+      <span class="announcement__separator">·</span>
+      <a href="#programas">Conocé los 4 programas <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <!-- Site Header -->
+  <header class="site-header" id="inicio">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="aprendeIT, volver al inicio">
+        <span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>aprende<span>IT</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegación principal">
+        <a href="#programas">Programas</a>
+        <a href="#docentes">Docente</a>
+        <a href="#metodo">Nuestro método</a>
+        <a href="#recorrido">Recorrido</a>
+        <a href="#testimonios">Comunidad</a>
+        <a href="#faq">Preguntas</a>
+        <a href="/login" style="color: var(--blue); font-weight: 800;">Aula Alumnos ↗</a>
+        <a class="button button--small button--nav" href="#programas">Ver programas <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero section-pad">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Aprendizaje digital con dirección</p>
+          <h1>Aprendé tecnología.<br /><em>Construí tu próximo paso.</em></h1>
+          <p class="hero__lead">Cursos en vivo para dominar Python, Inteligencia Artificial, Desarrollo Web y Automatización con n8n. Dictados por Jeremias Toledo con un enfoque 100% práctico, código real y sin humo.</p>
+          
+          <div class="hero__actions">
+            <a class="button button--primary" href="#programas">Explorar programas <span aria-hidden="true">↗</span></a>
+            <button class="button button--text" type="button" data-open-quiz>Ayudame a elegir <span aria-hidden="true">→</span></button>
+          </div>
+
+          <div class="hero__notes">
+            <span><span class="check" aria-hidden="true">✓</span> Clases en vivo con Jeremias</span>
+            <span><span class="check" aria-hidden="true">✓</span> Grabaciones de por vida</span>
+            <span><span class="check" aria-hidden="true">✓</span> Proyectos reales en producción</span>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal reveal--delay" aria-label="Vista previa de la experiencia aprendeIT">
+          <div class="visual-orbit visual-orbit--one"></div>
+          <div class="visual-orbit visual-orbit--two"></div>
+          <div class="visual-glow"></div>
+          
+          <div class="learning-card">
+            <div class="learning-card__topline">
+              <span class="status-dot"></span>
+              <span>tu espacio de aprendizaje</span>
+              <span class="learning-card__dots">•••</span>
+            </div>
+            <div class="learning-card__body">
+              <div class="learning-card__heading">
+                <span class="micro-label">RUTA 01 / APRENDE PYTHON CON IA</span>
+                <span class="live-pill"><span></span> EN VIVO</span>
+              </div>
+              <h2>De una idea<br />a un script real.</h2>
+              <div class="code-window">
+                <div class="code-window__bar"><i></i><i></i><i></i><span>automatizacion.py</span></div>
+                <div class="code-lines" aria-hidden="true">
+                  <span><b>01</b> <strong>import</strong> <u>openai</u>, <u>n8n_client</u></span>
+                  <span><b>02</b> &nbsp; <strong>def</strong> <u>ejecutar_flujo</u>():</span>
+                  <span><b>03</b> &nbsp; &nbsp; <mark>return</mark> "¡Proyecto listo!"</span>
+                </div>
+              </div>
+              <div class="learning-card__footer">
+                <div class="avatar-stack"><span>JT</span><span>AI</span><span>+</span></div>
+                <span>Docente: Jeremias Toledo · En vivo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="floating-stat floating-stat--top"><strong>92%</strong><span>termina<br />su proyecto</span></div>
+          <div class="floating-stat floating-stat--bottom"><span class="floating-stat__spark">✦</span><span>criterio<br />en acción</span></div>
+        </div>
+      </div>
+
+      <!-- Trust Row / Tech Stack -->
+      <div class="container trust-row">
+        <span class="trust-row__label">Aprendé con las herramientas que pide la industria</span>
+        <div class="trust-row__logos" aria-label="Tecnologías que vas a usar">
+          <span>python</span>
+          <span>openai</span>
+          <span>claude</span>
+          <span>n8n</span>
+          <span>html<span class="logo-muted">5</span></span>
+          <span>javascript</span>
+          <span>react</span>
+          <span>cursor</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMAS / CURSOS SECTION (4 CURSOS) -->
+    <section class="programs section-pad" id="programas">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span>Elegí tu punto de partida</p>
+            <h2>4 Programas para<br /><em>seguir avanzando.</em></h2>
+          </div>
+          <p class="section-heading__side">Una cuidada selección de 4 cursos prácticos dictados por Jeremias Toledo para dominar las herramientas más demandadas hoy en tecnología e inteligencia artificial.</p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filtrar programas">
+          <button class="filter-button is-active" type="button" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter-button" type="button" data-filter="start" role="tab" aria-selected="false">Desde cero</button>
+          <button class="filter-button" type="button" data-filter="grow" role="tab" aria-selected="false">Para crecer</button>
+          <button class="filter-button" type="button" data-filter="intensive" role="tab" aria-selected="false">Intensivos</button>
+          <span class="filter-count" aria-live="polite"><span id="course-count">04</span> programas disponibles</span>
+        </div>
+
+        <div class="course-grid" id="course-grid">
+          <!-- Cursos renderizados dinámicamente con JavaScript -->
+        </div>
+
+        <p class="empty-state" id="empty-state" hidden>No encontramos programas en esta categoría. Probá con otra ruta.</p>
+
+        <div class="center-action">
+          <a class="button button--outline" href="#contacto">Hacé una consulta personalizada con Jeremias <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCENTES & MENTORES SECTION (Jeremias Toledo) -->
+    <section class="instructors-section section-pad" id="docentes">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span>Docente & Mentor</p>
+            <h2>Aprender de<br /><em>personas reales.</em></h2>
+          </div>
+          <p class="section-heading__side">En aprendeIT todos los cursos son impartidos directamente por Jeremias Toledo. Clases 100% en vivo, sin avatares generados por IA ni lecturas de diapositivas pregrabadas.</p>
+        </div>
+
+        <div class="instructor-spotlight reveal">
+          <div class="instructor-card instructor-card--featured">
+            <div class="instructor-card__top">
+              <div class="instructor-avatar instructor-avatar--blue">JT</div>
+              <div class="instructor-heading">
+                <h3>Jeremias Toledo</h3>
+                <span>Fundador & Director Académico de aprendeIT</span>
+              </div>
+            </div>
+            <p class="instructor-bio">Senior Software Engineer especializado en Inteligencia Artificial, Desarrollo Web y Automatización de Procesos con n8n. Con un enfoque pragmático y orientado a la construcción de productos reales, Jeremias guía cada clase paso a paso, respondiendo dudas en vivo y revisando el código de cada alumno para garantizar que comprendas el porqué detrás de cada solución técnica.</p>
+            
+            <div class="instructor-credentials">
+              <div class="cred-item">
+                <strong>Clases en vivo</strong>
+                <span>Interacción humana directa</span>
+              </div>
+              <div class="cred-item">
+                <strong>Proyectos reales</strong>
+                <span>Subidos a producción</span>
+              </div>
+              <div class="cred-item">
+                <strong>Feedback continuo</strong>
+                <span>Code reviews personalizadas</span>
+              </div>
+            </div>
+
+            <div class="instructor-tag-list">
+              <span class="inst-tag">Python con IA</span>
+              <span class="inst-tag">IA para Trabajar</span>
+              <span class="inst-tag">Desarrollo Web</span>
+              <span class="inst-tag">Automatizaciones n8n</span>
+              <span class="inst-tag">Prompt Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MANIFIESTO SECTION -->
+    <section class="manifesto section-pad section-dark" id="comunidad">
+      <div class="container manifesto__grid">
+        <div class="manifesto__copy reveal">
+          <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>Aprender en serio</p>
+          <h2>La herramienta cambia.<br /><em>Tu criterio queda.</em></h2>
+          <p>Hay tutoriales para todo. Lo difícil es saber qué aprender, por qué y cómo llevarlo a un sistema real. En aprendeIT te damos contexto, práctica intensiva y una comunidad para que la tecnología no sea una lista de conceptos memorizados, sino una forma nueva de pensar y resolver problemas.</p>
+          <a class="text-link text-link--light" href="#metodo">Conocé nuestro método <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="stats-grid reveal reveal--delay">
+          <div class="stat-card">
+            <strong>2.500<span>+</span></strong>
+            <span>personas ya<br />pasaron por acá</span>
+          </div>
+          <div class="stat-card">
+            <strong>4.9<span>/5</span></strong>
+            <span>promedio de<br />satisfacción</span>
+          </div>
+          <div class="stat-card stat-card--wide">
+            <strong>01:01</strong>
+            <span>la hora en la que una idea<br />se convierte en proyecto</span>
+            <span class="stat-card__arrow">↗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODO SECTION (3 Offset Cards) -->
+    <section class="method section-pad" id="metodo">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Cómo aprendemos</p>
+          <h2>Aprender haciendo<br /><em>se siente diferente.</em></h2>
+          <p>Una clase en vivo que te desafía y te deja una pregunta abierta vale más que cincuenta horas mirando videos grabados. Por eso cada experiencia en aprendeIT tiene ritmo y movimiento real.</p>
+        </div>
+
+        <div class="method-grid">
+          <article class="method-card reveal">
+            <div class="method-card__number">01</div>
+            <div class="icon-tile icon-tile--blue" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 5.5h14v13H5z"/><path d="m8 9 2.5 3L8 15m4.5 0H16"/></svg>
+            </div>
+            <h3>Clases que<br />te despiertan.</h3>
+            <p>Encuentros en vivo con Jeremias Toledo, claros y con espacio dedicado para preguntar lo que realmente necesitás entender.</p>
+          </article>
+
+          <article class="method-card method-card--offset reveal reveal--delay">
+            <div class="method-card__number">02</div>
+            <div class="icon-tile icon-tile--violet" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="m9 12 2 2 4-4"/><path d="M12 5V3m0 18v-2M5 12H3m18 0h-2"/></svg>
+            </div>
+            <h3>Proyectos que<br />te representan.</h3>
+            <p>Aprendés con entregas concretas que podés mostrar, subir a GitHub o aplicar a tu negocio para optimizar tu trabajo.</p>
+          </article>
+
+          <article class="method-card reveal reveal--delay-2">
+            <div class="method-card__number">03</div>
+            <div class="icon-tile icon-tile--orange" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 18.5a7 7 0 1 1 10-12"/><path d="M17 4v4h-4"/><path d="M12 9v4l2.5 1.5"/></svg>
+            </div>
+            <h3>Una comunidad<br />que te banca.</h3>
+            <p>Compartís el proceso con gente que está en la misma: trabarse, consultar en Discord, recibir feedback y probar de nuevo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECORRIDO / JOURNEY SECTION -->
+    <section class="journey section-pad" id="recorrido">
+      <div class="container journey__grid">
+        <div class="journey__visual reveal" aria-label="Recorrido de aprendizaje">
+          <div class="journey-map">
+            <div class="journey-map__header">
+              <span>tu recorrido</span>
+              <span class="journey-map__badge">EN PROGRESO</span>
+            </div>
+            <div class="journey-map__path">
+              <span class="map-node map-node--active"><i></i><b>Curiosidad</b><small>el comienzo</small></span>
+              <span class="map-node map-node--current"><i></i><b>Práctica</b><small>estás acá</small></span>
+              <span class="map-node"><i></i><b>Proyecto</b><small>lo próximo</small></span>
+              <span class="map-node"><i></i><b>Confianza</b><small>tu destino</small></span>
+            </div>
+            <div class="journey-map__footer">
+              <span><strong>68%</strong> de la ruta completada</span>
+              <span>↗</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="journey__copy reveal reveal--delay">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Tu recorrido, a tu ritmo</p>
+          <h2>No necesitás<br /><em>saberlo todo.</em></h2>
+          <p>Necesitás una ruta que tenga sentido para vos. Empezá con lo que te da curiosidad, seguí con lo que te desafía y construí con el acompañamiento directo de Jeremias.</p>
+          <ul class="check-list">
+            <li>
+              <span>01</span>
+              <div>
+                <strong>Partís de tu realidad</strong>
+                <small>Sin requisitos imposibles ni tecnicismos innecesarios.</small>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <strong>Sumás una habilidad por vez</strong>
+                <small>El contenido exacto y estructurado para avanzar sin perderte.</small>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <strong>Te llevás algo propio</strong>
+                <small>Automatizaciones y aplicaciones funcionales que resuelven problemas reales.</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS SECTION -->
+    <section class="testimonials section-pad" id="testimonios">
+      <div class="container">
+        <div class="section-heading section-heading--split section-heading--testimonials reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span>Lo que pasa del otro lado</p>
+            <h2>Historias de<br /><em>personas reales.</em></h2>
+          </div>
+          <p class="section-heading__side">No prometemos que sea fácil. Prometemos que vas a contar con el acompañamiento de Jeremias y tus compañeros en cada paso.</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card testimonial-card--featured reveal">
+            <div class="quote-mark">“</div>
+            <blockquote>Hice el curso de Automatización con n8n con Jeremias. En solo dos semanas pude automatizar la gestión de prospectos de mi empresa y ahorrar 15 horas semanales de trabajo manual.</blockquote>
+            <div class="person">
+              <span class="person__avatar person__avatar--green">LC</span>
+              <div>
+                <strong>Lucía C.</strong>
+                <small>Operations Lead @ GrowthScale</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal reveal--delay">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <blockquote>Empecé con Python con IA desde cero absoluto. La paciencia de Jeremias para explicar cada concepto y el uso de herramientas modernas hicieron que todo encajara perfectamente.</blockquote>
+            <div class="person">
+              <span class="person__avatar person__avatar--yellow">MF</span>
+              <div>
+                <strong>Martín Fernández</strong>
+                <small>Analista de Datos Jr.</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal reveal--delay-2">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <blockquote>El curso de IA para Trabajar me cambió la forma de encarar el día a día. Cero humo, herramientas aplicables de inmediato y clases directas al grano. 100% recomendado.</blockquote>
+            <div class="person">
+              <span class="person__avatar person__avatar--pink">GA</span>
+              <div>
+                <strong>Gonzalo Álvarez</strong>
+                <small>Product Manager & Founder</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="faq-section section-pad" id="faq">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Preguntas Frecuentes</p>
+          <h2>Todo lo que necesitás<br /><em>saber antes de empezar.</em></h2>
+          <p>Respuestas directas sobre la dinámica de cursada, pagos, grabaciones y soporte continuo.</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿Quién dicta las clases en vivo?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Todas las clases de los 4 programas son impartidas en vivo y de forma personalizada por <strong>Jeremias Toledo</strong>, fundador de aprendeIT. No delegamos en avatares ni tutores sin experiencia.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿Qué pasa si no puedo asistir a una clase en vivo?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Todas las clases quedan grabadas en alta definición y se publican en el aula de alumnos dentro de las 2 horas posteriores al encuentro. Tenés acceso de por vida para repasarlas cuantas veces quieras.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿Necesito experiencia previa para inscribirme?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Cursos como <em>“Aprende Python con IA”</em>, <em>“IA para Trabajar”</em> y <em>“Aprende Automatización con n8n”</em> están diseñados desde cero absoluto. Para <em>“Aprende Web con IA”</em> tampoco necesitás saber programar, solo ganas de aprender.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿Cuáles son los métodos de pago y financiación?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Podés abonar en pesos argentinos (Mercado Pago, transferencia con alias y hasta 6 cuotas fijas sin interés) o en USD para pagos internacionales a través de Stripe y PayPal.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>¿Cómo funciona el acompañamiento entre clases?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Contás con un canal exclusivo en Discord donde Jeremias responde consultas de código, revisa tus avances y comparte recursos complementarios todos los días.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA SECTION -->
+    <section class="contact" id="contacto">
+      <div class="container contact__inner reveal">
+        <div class="contact__orb contact__orb--one"></div>
+        <div class="contact__orb contact__orb--two"></div>
+        <p class="eyebrow eyebrow--light"><span class="eyebrow__line"></span>El próximo paso empieza acá</p>
+        <h2>¿Qué te gustaría<br /><em>construir?</em></h2>
+        <p>Contanos qué tenés en mente. Te ayudamos a elegir el programa que mejor acompaña tus metas técnicas y profesionales.</p>
+        
+        <div class="contact-actions">
+          <a class="button button--white" href="https://wa.me/5491100000000?text=Hola%20Jeremias,%20quiero%20consultar%20por%20los%20cursos%20de%20AprendeIT" target="_blank" rel="noopener">
+            Escribile a Jeremias por WhatsApp <span aria-hidden="true">↗</span>
+          </a>
+          <button class="button button--outline" type="button" data-copy-email>
+            Copiar email (hola@aprendeit.com)
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <a class="brand brand--footer" href="#inicio">
+        <span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>aprende<span>IT</span></span>
+      </a>
+      <p>La tecnología se aprende<br />haciendo con Jeremias Toledo.</p>
+      
+      <div class="footer-links">
+        <a href="#programas">4 Programas</a>
+        <a href="#docentes">Docente</a>
+        <a href="#metodo">Método</a>
+        <a href="#recorrido">Recorrido</a>
+        <a href="#testimonios">Comunidad</a>
+        <a href="#faq">Preguntas</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        <a href="https://discord.gg" target="_blank" rel="noopener" aria-label="Discord">dc</a>
+        <a href="https://x.com" target="_blank" rel="noopener" aria-label="X / Twitter">x</a>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <span>© 2026 aprendeIT. Hecho para aprender mejor.</span>
+      <span>Buenos Aires, Argentina <span class="footer-heart">✦</span></span>
+    </div>
+  </footer>
+
+  <!-- MODAL: ASISTENTE DE ORIENTACIÓN RÁPIDO -->
+  <div class="modal" id="quiz-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="quiz-title">
+    <div class="modal__backdrop" data-close-quiz></div>
+    <div class="modal__card">
+      <button class="modal__close" type="button" data-close-quiz aria-label="Cerrar">×</button>
+      <p class="eyebrow"><span class="eyebrow__line"></span>Te acompañamos</p>
+      <h2 id="quiz-title">Encontrá tu<br /><em>punto de partida.</em></h2>
+      <p>Elegí la frase que más se parece a tu momento hoy.</p>
+      
+      <div class="quiz-options">
+        <button type="button" data-quiz-answer="start">
+          <span>01</span>Quiero empezar a programar desde cero <b>→</b>
+        </button>
+        <button type="button" data-quiz-answer="grow">
+          <span>02</span>Quiero aplicar IA a mi trabajo o crear webs <b>→</b>
+        </button>
+        <button type="button" data-quiz-answer="intensive">
+          <span>03</span>Quiero automatizar procesos y conectar APIs con n8n <b>→</b>
+        </button>
+      </div>
+
+      <div class="quiz-result" id="quiz-result" hidden></div>
+    </div>
+  </div>
+
+  <!-- MODAL: DETALLE / TEMARIO DE CURSO -->
+  <div class="modal" id="course-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close-course-modal></div>
+    <div class="modal__card modal__card--lg">
+      <button class="modal__close" type="button" data-close-course-modal aria-label="Cerrar">×</button>
+      <p class="eyebrow" id="modal-kicker"><span class="eyebrow__line"></span>Especialización Práctica</p>
+      <h2 id="modal-title">Título del Curso</h2>
+      <p id="modal-desc">Descripción detallada del curso y objetivos de aprendizaje.</p>
+
+      <div class="course-detail-meta">
+        <div class="cd-meta-item">
+          <span class="cd-meta-label">Duración</span>
+          <span class="cd-meta-val" id="modal-duration">8 semanas</span>
+        </div>
+        <div class="cd-meta-item">
+          <span class="cd-meta-label">Nivel</span>
+          <span class="cd-meta-val" id="modal-level">Inicial</span>
+        </div>
+        <div class="cd-meta-item">
+          <span class="cd-meta-label">Horarios</span>
+          <span class="cd-meta-val" id="modal-dates">Martes y Jueves</span>
+        </div>
+        <div class="cd-meta-item">
+          <span class="cd-meta-label">Modalidad</span>
+          <span class="cd-meta-val">En vivo + Grabado</span>
+        </div>
+      </div>
+
+      <!-- Instructor Box inside Course Detail Modal -->
+      <div class="cd-instructor-box" id="modal-instructor-box">
+        <!-- Poblado dinámicamente con JS -->
+      </div>
+
+      <h3 class="cd-syllabus-title">Contenido del Programa</h3>
+      <div class="cd-modules" id="modal-modules">
+        <!-- Módulos inyectados dinámicamente -->
+      </div>
+
+      <div class="cd-pricing-box">
+        <div>
+          <span class="cd-meta-label">Inversión del programa</span>
+          <div class="cd-price-main" id="modal-price">$130.000 ARS</div>
+          <span class="cd-price-sub" id="modal-price-usd">o $135 USD</span>
+          <div style="font-size: 11px; color: var(--muted); margin-top: 2px;" id="modal-installments">Hasta 6 cuotas fijas sin interés</div>
+        </div>
+        <a class="button button--primary" href="https://wa.me/5491100000000" target="_blank" rel="noopener" id="modal-enroll-btn">
+          Reservar mi lugar <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
