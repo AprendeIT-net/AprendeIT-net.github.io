@@ -7,7 +7,7 @@ Landing page estática oficial para **AprendeIT**, academia digital de tecnolog�
 ## 🌟 Características
 
 - **Diseño Moderno & Responsivo**: Tipografía cuidada (*Manrope* + *DM Mono*), modo oscuro nativo, gradientes y microanimaciones interactivas.
-- **Catálogo Interactivo de Cursos**: Exploración dinámica de programas (*FastAPI & Microservicios*, *Automatizaciones con IA*, *Python Profesional*, *DevOps Cloud*) con modal detallado de temarios, precios y docentes.
+- **Catálogo Interactivo de Cursos**: Exploración dinámica de cursos (*Aprende Python con IA*, *IA para Trabajar*, *Aprende Web con IA*, *Aprende Automatización con n8n*) con modal detallado de temarios, plazas, precios y docente.
 - **Simulador de Precios y Cuotas**: Cálculo dinámico en moneda local (ARS) y USD.
 - **Integración Directa con WhatsApp**: Enlaces directos para consultas e inscripciones personalizadas.
 - **Secciones Completas**:

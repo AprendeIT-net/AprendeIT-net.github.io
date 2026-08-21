@@ -316,7 +316,7 @@ function fillModal(c) {
   }
 
   if (enrollBtn) {
-    const text = encodeURIComponent(`Hola Jeremias! Me interesa inscribirme al intensivo de 2 semanas "${c.title}" en AprendeIT.`);
+    const text = encodeURIComponent(`Hola Jeremias! Me interesa reservar una plaza para el curso "${c.title}" en AprendeIT.`);
     enrollBtn.href = `https://wa.me/543876150875?text=${text}`;
   }
 }
